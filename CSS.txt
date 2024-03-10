@@ -1104,4 +1104,73 @@ EXAMPLE = [
 
 
 
+<!-- MEDIA QUERY IN CSS FOR RESPONSIVE PAGE -->
+[
+    /*
+    @media [screen, speech device, print device, and all]
+    screen = phone, desktop, tablet. 
+    speech device = screen reader.
+    print device = how you want the screen to look like on the print dialog.
+    all = this cast across all screens and devices.
+    all = IS THE DEFAULT.
+
+    THIS WILL CHANGE THE TEXT COLOR TO BLUE, WHEN THE SCREEN WIDTH REACHS 500px.
+    THIS WILL APPLY TO ALL SCREENS AND DEVICES.
+    500px and Below.
+    @media all and (max-width: 500px){
+        body{
+            color: blue;
+        }
+    }
+    ||| IS THE SAME THING |||
+    @media (max-width: 500px){
+        body{
+            color: blue;
+        }
+    }
+
+    !! THERE IS ALSO (min-width: ) PROPERTY !!
+
+    ||| ONLY WHEN PRINTING |||
+    @media print {
+        body{
+            color: blue;
+        }
+    }
+
+    ||| ORIENTATION |||
+    landscape = horizontal
+    portrait  = verticaly
+    -- LANDSCAPE --
+    @media (orientation: landscape){
+        .output .previous_operand {
+            color: rgb(12, 5, 5);
+        }
+    }
+    -- PORTRAIT --
+    @media (orientation: portrait){
+        .output .previous_operand {
+            color: rgb(202, 15, 15);
+        }
+    }
+    -- YOU CAN COMBINE THEM WITH THE 'and' OPERATOR
+    @media (orientation: landscape) and (max-width: 500px){
+        .output .previous_operand {
+            color: rgb(71, 19, 212);
+        }
+    }
+    -- YOU CAN COMBINE THEM WITH THE OR STATEMENT REPRESENTED BY ','.
+    @media (orientation: landscape), (max-width: 500px){
+        .output .previous_operand {
+            color: rgb(71, 19, 212);
+        }
+    }
+    */
+]
+
+
+
+
+
+
 -- FINISHED ON Saturday, March 9, 2024, 03:31 AM --
