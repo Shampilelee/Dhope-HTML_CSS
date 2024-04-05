@@ -940,15 +940,15 @@ EXAMPLE = [
         text-align: center;
         background-color: rgb(138, 8, 8);
 
-        /* CAN BE APPLIED ON CLASSES '<div>' images borders and man more */
+        /* CAN BE APPLIED ON CLASSES '<div>' images borders and many more */
         /*
         WITH THE 'translate' PROPERTY WE CAN SET THE 'X'(move left and right) AND 'Y'(move up and down)
         'translateX' FOR X AXIS 'translateY' ON Y AXIS, AND 'translate' FOR BOTH.
         WITH 'transform: translateX(100px)' THE NUMBER IN THE '()' WILL MOVE THE ELEMENT TO THE RIGHT,
         NAGITIVE NUMBERS WILL MOVE IT TO THE LEFT. !! YOU CAN USE 'px' AND '%'!!
-        WITH 'translate(X,Y)' THGIS IOS USED TO SET THE TWO.
+        WITH 'translate(X,Y)' THIS IS USED TO SET THE TWO(left-right, top-down).
 
-        WITH THE RORATION WE HAVE 'rotateX()', 'rotateY()', AND 'rotateZ()' ALL ARE MEASURED IN 'deg'
+        WITH THE ROTATION WE HAVE 'rotateX()', 'rotateY()', AND 'rotateZ()' ALL ARE MEASURED IN 'deg'
         EXAMPLE = [transform: rotateY(180deg); transform: rotateX(45deg); transform: rotateZ(45deg); ]
 
         THE SCALE PROPERTY 'transform: scaleX(1);' MEANS 100% on the x-axis.
@@ -989,7 +989,7 @@ EXAMPLE = [
 
     /* 
     TO USE AN ANIMATION WE FIRST NEED TO CREATE AN ANIMATION 
-    USING A KEYFRAME RULE: '@keyframes ANIMATION_NAME' 
+    USING A KEYFRAME RULE: '@keyframes ANIMATION_NAME' OUTSIDE OF THE '#box{}', SO ON A NEW LINE. 
 
     TO SLIDE FROM THE RIGHT TO THE LEFT THE ANIMATION WILL BE = [ @keyframes slideLeft{} ]
     within the '{}' we can use these valus [to, from, and percentage(45%)].
@@ -1067,7 +1067,7 @@ EXAMPLE = [
     YOU CAN SET ANIMATION TO OCCURE WHEN YOU HOVER OVER THE ELEMENT. 
     [
         #box:hover{
-            / MOVE THE ANIMATION NAME AND DURATION TO HERE, THAT ALL. /
+            /* MOVE THE ANIMATION NAME AND DURATION TO HERE, THAT ALL. */
             animation-name: glowEffect;
             animation-duration: 5s;
         }
@@ -1097,7 +1097,7 @@ EXAMPLE = [
     THE DEFAULT IS = 'animation-timing-function: ease-in-out;'.
     FOR CONSTANT SPEED = 'animation-timing-function: linear;'
     TO SET WHEN TO STOP THE ANIMATION, USE THE 'steps(Num);' 
-    'Num' = ANIMATION WILL STOP WHEN IT REACHES THE 'Num' OF STEPS = 'animation-timing-function: steps(2);'
+    'Num' = ANIMATION WILL STOP, WHEN IT REACHES THE 'Num' OF STEPS = 'animation-timing-function: steps(2);'
     */
 ]
 
